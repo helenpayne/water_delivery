@@ -1,7 +1,6 @@
 # schemas.py
 
 from pydantic import BaseModel
-from typing import Optional
 
 class WeChatLoginRequest(BaseModel):
     code: str  # 微信登录凭证
