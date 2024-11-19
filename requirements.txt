@@ -1,0 +1,6 @@
+fastapi
+httpx
+sqlalchemy
+mysql-connector-python
+pydantic
+uvicorn
