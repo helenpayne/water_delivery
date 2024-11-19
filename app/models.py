@@ -4,6 +4,7 @@ from sqlalchemy.sql import func
 
 Base = declarative_base()
 
+
 # 用户数据库模型
 class User(Base):
     __tablename__ = 'users'

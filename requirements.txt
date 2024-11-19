@@ -6,3 +6,4 @@ pydantic
 uvicorn
 alembic
 pymysql
+PyJWT

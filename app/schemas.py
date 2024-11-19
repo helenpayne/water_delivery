@@ -2,6 +2,12 @@ from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
 
+
+class Token(BaseModel):
+    token: str
+
+
+
 # 用户基础模型
 class UserBase(BaseModel):
     nickname: str  # 昵称

@@ -20,8 +20,7 @@ def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     if db_user:
         raise HTTPException(status_code=400, detail="User already exists")
 
-    # 使用 model_dump 替换 dict 方法
-    db_user = models.User(**user.model_dump())
+    db_user = models.User(**user.dict())
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
