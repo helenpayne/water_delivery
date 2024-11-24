@@ -1,0 +1,1 @@
+<view class="container data-v-4ca88669"><view wx:if="{{a}}" class="data-v-4ca88669"><view class="data-v-4ca88669">正在加载用户信息...</view></view><view wx:else class="data-v-4ca88669"><view class="data-v-4ca88669">欢迎, {{b}}</view></view></view>

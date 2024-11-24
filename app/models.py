@@ -5,14 +5,13 @@ from sqlalchemy.sql import func
 Base = declarative_base()
 
 
-# 用户数据库模型
 class User(Base):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True, autoincrement=True, comment="自增ID")
     wechat_openid = Column(String(191), unique=True, nullable=False, comment="微信openid")
     nickname = Column(String(255), nullable=False, comment="昵称")
-    avatar_url = Column(String(255), nullable=False, comment="头像URL")
+    avatar_url = Column(String(255), nullable=True, comment="头像URL")
     phone_number = Column(String(20), nullable=True, comment="电话号码")
     level = Column(Integer, default=0, nullable=False, comment="等级")
     balance = Column(Float, default=0.00, nullable=False, comment="余额")
